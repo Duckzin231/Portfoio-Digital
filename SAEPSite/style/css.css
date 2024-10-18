@@ -1,0 +1,246 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: #2862de;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.menu li a:hover{
+    background-color: rgba(224, 224, 224, 0.5);
+}
+
+.form{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 25%;
+    padding: 80px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.form-box{
+    flex-direction: column;
+    border-radius: 8px;
+    width: 700px;
+    display: flex;
+}
+
+.form-box .title{
+    padding: 24px 32px;
+    font-size: 24;
+}
+
+.form-box form{
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.form-box input,
+.form-box text{
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form-box input:first-child{
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form-box button [type="submit"]{
+    display: block;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover{
+    background-color: rgb(42, 92, 143);
+}
+
+.container-task{
+    color: black;
+    font: bold;
+}
+
+.task{
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 7 16px;
+    font-size: 16px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+button:hover{
+    background-color:rgba(42, 92, 143) ;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+lii{
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+lii:hover{
+    background-color:rgb(213, 223, 231) ;
+}
+main{
+    
+    position: relative;
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: rgba(30, 143, 255, 0.804);
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button{
+    cursor: pointer;
+    
+}
+

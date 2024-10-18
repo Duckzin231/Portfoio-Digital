@@ -1,0 +1,66 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css.css">
+    <title>SAEP</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo"> <!--container-logo -->
+            <div class="logo-imagem">
+                <img src="./style/cabecalho-3SENAI (1).png" alt="Logo SENAI">
+            </div>
+            </div>
+        </div> <!--container-logo -->
+        
+        <div class="menu"> <!--menu-->
+            <ul>
+                <li><a href="index.html">Cadastro User</a></li>
+                <li><a href="cadastrotask.html">Cadastro Tarefa</a></li>
+                <li><a href="admtask.html">Gerenciamento de Tarefas</a></li>
+            </ul>
+        </div> <!--menu-->
+
+    </header>
+</head>
+
+<div class="container">
+    <h2>Gerenciamento de Tarefas</h2>
+    <table>
+        <tr>
+            <th>User</th>
+            <td><input type="text" placeholder="Nome do usuário"></td>
+        </tr>
+        <tr>
+            <th>Setor</th>
+            <td><input type="text" placeholder="Setor"></td>
+        </tr>
+        <tr>
+            <th>Prioridade</th>
+            <td>
+                <select>
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>
+                <select>
+                    <option value="feito">Feito/Pronto</option>
+                    <option value="fazendo">Fazendo/Andando</option>
+                    <option value="fazer">Fazer/Preguiça</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <label>Descrição:</label>
+    <textarea rows="4" placeholder="Descreva a tarefa"></textarea>
+
+    <button>Excluir</button>
+    <button>Editar</button>
+</div>
+<head>

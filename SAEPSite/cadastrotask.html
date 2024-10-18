@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css.css">
+    <title>SAEP CADASTRO DE TASK</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo"> <!--container-logo -->
+            <div class="logo-imagem">
+                <img src="./style/cabecalho-3SENAI (1).png" alt="Logo SENAI">
+            </div>
+            </div>
+        </div> <!--container-logo -->
+        
+        <div class="menu"> <!--menu-->
+            <ul>
+                <li><a href="index.html">Cadastro User</a></li>
+                <li><a href="cadastrotask.html">Cadastro Tarefa</a></li>
+                <li><a href="admtask.html">Gerenciamento de Tarefas</a></li>
+            </ul>
+        </div> <!--menu-->
+
+    </header>
+
+    <main>
+        <div >
+            <h2>Cadastro de Tarefa</h2>
+        <form>
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" required>
+    
+            <label for="setor">Setor:</label>
+            <input type="text" id="setor" name="setor" required>
+    
+            <label for="user">Usuário:</label>
+            <select name="user" id="user" required>
+                <option value="">Selecione...</option>
+                <option value="João pe de feijão">João pe de feijão</option>
+                <option value="Maria da roupa">Maria da roupa</option>
+                <option value="Yagho, vulgo bigode">Yagho, vulgo bigode</option>
+        </select>
+    
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade" required>
+                <option value="">Selecione...</option>
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+    
+            <input type="submit" value="Cadastrar Tarefa">
+        </form>
+    </main>
+    
+
+   
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+
+
+
+
