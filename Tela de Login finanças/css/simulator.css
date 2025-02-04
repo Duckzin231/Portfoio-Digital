@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2b134b; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i {
+    margin-right: 8px;
+}
+
+/* Estilo do conteúdo da página */
+main {
+    padding: 40px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2b134b;
+    margin-bottom: 30px;
+}
+
+/* Container principal do simulador */
+.simulator-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Formulário de Simulação */
+.simulator-form {
+    background-color: #2f2841;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 48%;
+}
+
+.simulator-form .form-group {
+    margin-bottom: 20px;
+}
+
+.simulator-form label {
+    font-size: 1rem;
+    color: #f0ffffde;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.simulator-form input {
+    width: 100%;
+    padding: 12px;
+    background-color: #514869;
+    border: none;
+    border-radius: 8px;
+    color: #f0ffffde;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.simulator-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ff88;
+    color: #2b134b;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.simulator-form button:hover {
+    background-color: #00e173;
+}
+
+/* Resultados da Simulação */
+.simulator-result {
+    background-color: #2f2841;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 48%;
+}
+
+.simulator-result h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#simulationResult {
+    font-size: 1.2rem;
+    color: #f0ffffde;
+}
+
+/* Responsividade */
+@media (max-width: 950px) {
+    .simulator-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .simulator-form, .simulator-result {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .simulator-form input, .simulator-form button {
+        font-size: 0.9rem;
+    }
+}

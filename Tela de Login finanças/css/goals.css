@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2b134b;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-50 {
+    background-color: #fff;
+  }
+  
+  .bg-blue-600 {
+    background-color: #2b134b;
+  }
+  
+  header {
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .back-button {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button i {
+    margin-right: 0.5rem;
+  }
+  
+  .page-content {
+    padding: 2rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .goals-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .goal-form, .goals-list {
+    width: 48%;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    background-color: aquamarine;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #79e1bf;
+  }
+  
+  .goals-list {
+    border-left: 2px solid #ccc;
+    padding-left: 1.5rem;
+  }
+  
+  .goal-item {
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .goal-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .goal-item p {
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .goals-container {
+      flex-direction: column;
+    }
+  
+    .goal-form, .goals-list {
+      width: 100%;
+    }
+  }
+  

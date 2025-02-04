@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2b134b; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i {
+    margin-right: 8px;
+}
+
+/* Estilo do conteúdo da página */
+main {
+    padding: 40px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2b134b;
+    margin-bottom: 30px;
+}
+
+/* Container da Educação Financeira */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Filtros de Artigos */
+.education-filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.filter-button {
+    background-color: #2f2841;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button.active {
+    background-color: #00ff88;
+}
+
+.filter-button:hover {
+    background-color: #00e173;
+}
+
+/* Grid de Artigos */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article-card {
+    background-color: #2f2841;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+}
+
+.article-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    color: #f0ffffde;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.article-card a {
+    text-decoration: none;
+    color: #00ff88;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.article-card a:hover {
+    color: #00e173;
+}
+
+/* Responsividade */
+@media (max-width: 950px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .filter-button {
+        font-size: 0.9rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 1.6rem;
+    }
+
+    .filter-button {
+        font-size: 0.8rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educação Financeira - FinançasPRO</title>
+  <link rel="stylesheet" href="css/education.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50">
+    <header class="bg-blue-600">
+      <div class="header-content">
+        <div class="logo">
+          <i data-lucide="wallet"></i>
+          <h1>FinançasPRO</h1>
+        </div>
+        <a href="dashboard.html" class="back-button">
+          <i data-lucide="arrow-left"></i>
+          Voltar
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-content">
+        <h2 class="page-title">Educação Financeira</h2>
+        
+        <div class="education-container">
+          <div class="education-filters">
+            <button class="filter-button active" data-filter="all">Todos</button>
+            <button class="filter-button" data-filter="basics">Conceitos Básicos</button>
+            <button class="filter-button" data-filter="investments">Investimentos</button>
+            <button class="filter-button" data-filter="planning">Planejamento</button>
+          </div>
+
+          <div class="articles-grid" id="articlesGrid">
+            <!-- Articles will be dynamically added here -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/education.js"></script>
+</body>
+</html>

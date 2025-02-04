@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinançasPRO</title>
+  <link rel="stylesheet" href="css/Dashboard.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600">
+      <div class="header-content">
+        <div class="logo">
+          <i data-lucide="wallet"></i>
+          <h1>FinançasPRO</h1>
+        </div>
+        <div class="user-menu">
+          <i data-lucide="bell" class="cursor-pointer"></i>
+          <div class="avatar">
+            <span>JP</span>
+          </div>
+          <a href="index.html" id="logoutLink">
+            <button class="logout-button">Sair</button>
+          </a>
+        </div>
+        
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Resumo Financeiro -->
+      <section class="financial-summary">
+        <div class="summary-card">
+          <div class="card-header">
+            <h3>Saldo Total</h3>
+            <i data-lucide="dollar-sign" class="text-green"></i>
+          </div>
+          <div class="amount-input">
+            <span class="currency">R$</span>
+            <input type="number" id="totalBalance" placeholder="0,00" step="0.01" min="0">
+          </div>
+          <div class="trend positive">
+            <i data-lucide="arrow-up-right"></i>
+            <span>Atualizado agora</span>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <div class="card-header">
+            <h3>Investimentos</h3>
+            <i data-lucide="trending-up" class="text-blue"></i>
+          </div>
+          <div class="amount-input">
+            <span class="currency">R$</span>
+            <input type="number" id="investments" placeholder="0,00" step="0.01" min="0">
+          </div>
+          <div class="trend positive">
+            <i data-lucide="arrow-up-right"></i>
+            <span>Atualizado agora</span>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <div class="card-header">
+            <h3>Despesas</h3>
+            <i data-lucide="pie-chart" class="text-red"></i>
+          </div>
+          <div class="amount-input">
+            <span class="currency">R$</span>
+            <input type="number" id="expenses" placeholder="0,00" step="0.01" min="0">
+          </div>
+          <div class="trend">
+            <i data-lucide="arrow-right"></i>
+            <span>Insira suas despesas</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Perfil de Investidor -->
+      <section class="investor-profile">
+        <h2>Seu Perfil de Investidor</h2>
+        <div class="profile-buttons">
+          <button data-profile="conservador">Conservador</button>
+          <button data-profile="moderado" class="active">Moderado</button>
+          <button data-profile="arrojado">Arrojado</button>
+        </div>
+      </section>
+
+      <!-- Grid de Funcionalidades -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <i data-lucide="target"></i>
+          <h3>Objetivos Financeiros</h3>
+          <p>Defina e acompanhe suas metas financeiras</p>
+          <a href="goals.html">
+            <button class="action-button">
+              Definir meta
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </a>
+          
+        </div>
+
+        <div class="feature-card">
+          <i data-lucide="calculator"></i>
+          <h3>Simulador</h3>
+          <p>Simule diferentes cenários de investimento</p>
+          <a href="simulator.html">
+            <button class="action-button">
+              Definir meta
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </a>
+          
+        </div>
+
+        <div class="feature-card">
+          <i data-lucide="book-open"></i>
+          <h3>Educação Financeira</h3>
+          <p>Aprenda mais sobre finanças e investimentos</p>
+          <a href="education.html">
+            <button class="action-button">
+              Definir meta
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </a>
+          
+        </div>
+
+        <div class="feature-card">
+          <i data-lucide="shield"></i>
+          <h3>Segurança</h3>
+          <p>Configure suas preferências de segurança</p>
+          <a href="security.html">
+            <button class="action-button">
+              Definir meta
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
